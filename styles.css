@@ -1,0 +1,56 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    margin: 50px;
+    padding: 0px;
+    background-color: rgb(226, 226, 226);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#originalPost {
+    background-color: white;
+    top: 0px;
+    position: fixed;
+    padding: 20px;
+}
+
+h1 {
+    margin: 5px 0px;
+}
+
+h2 {
+    margin: 0px;
+    font-weight: lighter;
+}
+
+#container {
+    background-color: rgb(255, 255, 255);
+}
+
+#commentCreator {
+    background-color: white;
+    bottom: 0px;
+    position: fixed;
+    padding: 20px;
+}
+
+#displayName {
+    width: 90px;
+}
+
+#comment {
+    width: 80%
+}
+
+#submit {
+    color: rgb(0, 170, 255);
+    border-style: none;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
