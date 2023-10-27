@@ -1,12 +1,22 @@
-// add comment function
-    $("#submit").click(function () {
-        for (let i = 0; i < 1; i++) {
-            var comment = document.getElementById("comment").value
-            $("#commentContainer").append(
-            `<div id="comment">${comment}</div>`
-            );
-        };
-    });
+// array to store comments
+let commentSection = [
+    {
+        name: "Hello",
+        comment: "Hello World"
+    }
+]
 
+// add comment to array
+$("#submit").click( function () {
+    commentSection.push("poop");
+});
+
+// Going through array and appending them to index.html
+for (let i = 0; i < commentSection.length; i++) {
+      $("#container").append('<div class="commentContainer">'
+        + '<div class="displayName">' + commentSection[i].name + "</div>"
+        + '<div class="comment">' + commentSection[i].comment + "</div>"
+        + '</div>');
+  };
 
 
