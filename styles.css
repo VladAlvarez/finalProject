@@ -9,9 +9,9 @@
 }
 
 body {
-    margin: 0px 20px ;
+    margin: 0px 25px ;
     padding: 0px;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(243, 243, 243);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -35,17 +35,23 @@ h2 {
     background-color: rgb(226, 226, 226);
     display: flex;
     flex-direction: column-reverse;
+    padding: 20px 20px 0px 20px;
 }
 
 #commentCreator {
+    display: flex;
     background-color: white;
-    bottom: 0px;
-    position: fixed;
-    padding: 20px;
+    padding: 25px;
+    position: sticky;
+    bottom: 0;
 }
 
-#displayName {
-    width: 90px;
+#commentWriter {
+    width: 90%;
+}
+
+#displayNameWriter {
+    margin-right: 10px;
 }
 
 #submit {
@@ -53,6 +59,8 @@ h2 {
     border-style: none;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 .hidden {
@@ -76,8 +84,8 @@ h2 {
 }
 
 .entry {
-    background-color: white;
-    margin: 20px 20px 0px 20px;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 20px;
     padding: 15px;
     display: inline
 }
@@ -97,6 +105,7 @@ h2 {
 .comment {
     font-size: 30px;
     font-weight: bold;
+    overflow-wrap: break-word;
 }
 
 .editDelete {
