@@ -33,7 +33,7 @@ $("#submit").click(function () {
             <div id="edit${containerChildrenCount}">edit</div>
             <div id="delete${containerChildrenCount}">delete</div>
             <div id="editCommentContainer${containerChildrenCount}" class="hidden">
-                <input type="text" placeholder="${comment}">
+                <input type="text" id="newInput${containerChildrenCount}" placeholder="${comment}">
                 <div id="newSubmit${containerChildrenCount}">Submit</div>
             </div>
             </div>`
@@ -43,5 +43,10 @@ $("#submit").click(function () {
         });
         $(`#delete${containerChildrenCount}`).click(function () {
             $(`#entry${containerChildrenCount}`).remove()
+        });
+        $(`#newSubmit${containerChildrenCount}`).click(function () {
+            const newComment = document.getElementById(`newInput${containerChildrenCount}`).value
+            $(`#comment${containerChildrenCount}`).text(newComment)
+            $(`#editCommentContainer${containerChildrenCount}`).toggleClass("displayEdit");
         });
 });
